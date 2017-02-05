@@ -5,6 +5,7 @@ using UnityEngine;
 public class failTrigger : MonoBehaviour
 {
     public GameObject ball;
+    public GameObject livesText;
     Vector3 ballPos;
 
     void Start()
@@ -18,8 +19,7 @@ public class failTrigger : MonoBehaviour
         {
             Transform ballTransform = ball.GetComponent<Transform>();
             ballTransform.position = ballPos;
+            livesText.GetComponent<Lives>().lives = livesText.GetComponent<Lives>().lives - 1;
         }
-
-        //other.gameObject.GetComponent<SpriteRenderer>().color = Color.yellow;
     }
 }

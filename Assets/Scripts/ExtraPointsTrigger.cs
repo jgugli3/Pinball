@@ -21,7 +21,5 @@ public class ExtraPointsTrigger : MonoBehaviour
             ballTransform.position = ballPos;
             scoreText.GetComponent<Score>().score = scoreText.GetComponent<Score>().score + 500;
         }
-
-        //other.gameObject.GetComponent<SpriteRenderer>().color = Color.yellow;
     }
 }
