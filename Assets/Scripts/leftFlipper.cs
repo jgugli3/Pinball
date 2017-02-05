@@ -17,11 +17,11 @@ public class leftFlipper : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            jointMotor.motorSpeed = 500;
+            jointMotor.motorSpeed = 1000;
         }
         else
         {
-            jointMotor.motorSpeed = 0;
+            jointMotor.motorSpeed = -500;
         }
         hingeJoints[0].motor = jointMotor;
     }

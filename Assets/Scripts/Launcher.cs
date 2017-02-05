@@ -8,12 +8,9 @@ public class Launcher : MonoBehaviour
 
 	void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject == ball)
+        if(other.gameObject == ball && Input.GetKey(KeyCode.Space))
         {
-            if(Input.GetKey(KeyCode.Space))
-            {
-
-            }
+            ball.GetComponent<Rigidbody2D>().velocity = Vector3.up * 10.0f;
         }
     }
 }
