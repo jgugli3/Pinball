@@ -6,6 +6,7 @@ public class failTrigger : MonoBehaviour
 {
     public GameObject ball;
     public GameObject livesText;
+    public GameObject launcher;
     Vector3 ballPos;
 
     void Start()
@@ -17,6 +18,7 @@ public class failTrigger : MonoBehaviour
     {
         if(other.gameObject == ball)
         {
+            launcher.GetComponent<Launcher>().firstLaunch = true;
             Transform ballTransform = ball.GetComponent<Transform>();
             ballTransform.position = ballPos;
             livesText.GetComponent<Lives>().lives = livesText.GetComponent<Lives>().lives - 1;

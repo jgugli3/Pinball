@@ -5,13 +5,13 @@ using UnityEngine;
 public class BumperCollision : MonoBehaviour
 {
     public GameObject ball;
-	void Start ()
+    public GameObject scoreText;
+
+	void OnCollisionEnter2D(Collision2D other)
     {
-		
-	}
-	
-	void Update ()
-    {
-		
-	}
+        if (other.gameObject == ball)
+        {
+            scoreText.GetComponent<Score>().score = scoreText.GetComponent<Score>().score + 250;
+        }
+    }
 }

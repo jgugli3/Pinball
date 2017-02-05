@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1302016463244402}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.15625, y: 0.125, z: -1}
+  m_LocalPosition: {x: 0.125, y: 0.125, z: -1}
   m_LocalScale: {x: 0.125, y: 0.1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -71,7 +71,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 1302016463244402}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 66fd94319082f534ba0bbf522dbbfabb, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
@@ -89,6 +89,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 0}
+  scoreText: {fileID: 0}
 --- !u!212 &212777743771839158
 SpriteRenderer:
   m_ObjectHideFlags: 1
